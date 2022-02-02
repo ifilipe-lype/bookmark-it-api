@@ -1,0 +1,48 @@
+{
+  "name": "bookmark-it-api",
+  "version": "1.0.0",
+  "description": "an url bookmark service",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifilipe-lype/bookmark-it-api.git"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "ts",
+    "bookmark"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifilipe-lype/bookmark-it-api/issues"
+  },
+  "homepage": "https://github.com/ifilipe-lype/bookmark-it-api#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "prettier": "2.5.1",
+    "pretty-quick": "^3.1.3",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
