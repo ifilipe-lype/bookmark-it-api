@@ -1,0 +1,29 @@
+{
+  "name": "bookmark-it-api",
+  "version": "1.0.0",
+  "description": "an url bookmark service",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifilipe-lype/bookmark-it-api.git"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "ts",
+    "bookmark"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifilipe-lype/bookmark-it-api/issues"
+  },
+  "homepage": "https://github.com/ifilipe-lype/bookmark-it-api#readme",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
