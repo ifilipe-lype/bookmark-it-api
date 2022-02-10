@@ -6,7 +6,7 @@ import { IUsersRepository } from '../repositories/IUsersRepository';
 import { AppError } from '@shared/entities/AppError';
 
 @injectable()
-export class CreateUserFromProviderService {
+export class CreateUserUseCase {
   constructor(@inject('UsersRepository') private usersRepository: IUsersRepository) {}
 
   async execute(data: ICreateUserDTO): Promise<IUserDTO | never> {
@@ -19,4 +19,4 @@ export class CreateUserFromProviderService {
   }
 }
 
-export default CreateUserFromProviderService;
+export default CreateUserUseCase;
