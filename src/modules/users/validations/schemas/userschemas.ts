@@ -14,7 +14,7 @@ export const createUserSchema: yup.SchemaOf<ICreateUserDTO> = yup.object().shape
     .max(255, "username can't be longer than 255 characters!"),
   email: yup.string().required().email('Invalid email!'),
   email_verified: yup.boolean().default(false),
-  avatar_url: yup.string().url("Invalid avatar's url").default(null),
+  avatar_url: yup.string().url("Invalid avatar's url").nullable().default(null),
   //password: yup.string().min(8, 'Password must be at least 8 chars long!'),
   provider: yup.string().default(null),
   provider_user_id: yup.string().default(null),
