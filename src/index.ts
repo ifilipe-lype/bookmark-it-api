@@ -3,6 +3,7 @@ import 'dotenv/config';
 import app from '@shared/infra/http/server';
 import { setupDBConnection } from '@shared/infra/typeorm';
 
+// connects to the database
 setupDBConnection();
 
 const port = process.env.PORT || 5000;
