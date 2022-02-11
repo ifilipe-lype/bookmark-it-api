@@ -19,6 +19,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 app.use('/api', routes);
 
+// handles async errors
 app.use((err: Error, req: Request, res: Response, _: NextFunction) => {
   if (err instanceof AppError) {
     return res.status(err.statusCode).json({
