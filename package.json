@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --watch ./src ./src/index.ts"
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --watch ./src ./src/index.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
   },
   "repository": {
     "type": "git",
@@ -60,8 +61,10 @@
     "express-async-errors": "^3.1.1",
     "express-jwt": "^6.1.0",
     "jwks-rsa": "^2.0.5",
+    "pg": "^8.7.3",
     "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.6.0",
+    "typeorm": "^0.2.41",
     "uuid": "^8.3.2",
     "yup": "^0.32.11"
   }
