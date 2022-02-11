@@ -17,8 +17,8 @@ export interface ICreateUserDTO {
   username?: string;
   email: string;
   email_verified: boolean;
-  avatar_url: string | null;
-  //password: string;
-  provider: string | null;
-  provider_user_id: string | null;
+  avatar_url?: string;
+  //password?: string;
+  provider?: string;
+  provider_user_id?: string;
 }
