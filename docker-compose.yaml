@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  bookmark-it-db:
+    image: postgres
+    container_name: bookmark-it-db
+    environment:
+      - POSTGRES_USER=${TYPEORM_USERNAME}
+      - POSTGRES_PASSWORD=${TYPEORM_PASSWORD}
+      - POSTGRES_DB=${TYPEORM_DATABASE}
+
+    ports:
+      - '${TYPEORM_PORT}:5432'
+    volumes:
+      - pgdata:/data/postgres
+      # for creating a second user and db for testing
+      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
+    restart: always
+    networks:
+      - bookmark-it-network
+
+networks:
+  bookmark-it-network:
+    driver: bridge
+
+volumes:
+  pgdata:
+    driver: local
