@@ -5,9 +5,9 @@ export interface IUserDTO {
   email: string;
   email_verified: boolean;
   //password: string | null;
-  avatar_url: string | null;
-  provider: string | null;
-  provider_user_id: string | null;
+  avatar_url?: string;
+  provider?: string;
+  provider_user_id?: string;
   created_at: Date;
   updated_at: Date;
 }
